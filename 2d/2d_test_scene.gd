@@ -10,6 +10,7 @@ func _ready() -> void:
 	print(str(xd))
 	print(str(xd2))
 	print(str(xd3))
+	print(-0.5 > 0.0)
 
 func _process(_delta: float) -> void:
 	var mouse_pos:Vector2= get_viewport().get_mouse_position()

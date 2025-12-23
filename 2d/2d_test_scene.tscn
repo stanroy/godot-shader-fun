@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://6ep8aclsjc4k" path="res://2d/2d_test_scene.gd" id="1_s8b5x"]
 [ext_resource type="Shader" uid="uid://b38pteacj17tj" path="res://2d/chapter05-4.gdshader" id="2_s8b5x"]
-[ext_resource type="Shader" uid="uid://k4urq8k0ptpf" path="res://2d/cashew-olddew-ex10-pixelization.gdshader" id="3_nlo6c"]
+[ext_resource type="Shader" uid="uid://dog0d2d322mjd" path="res://2d/self_study/rotation.gdshader" id="3_nlo6c"]
 [ext_resource type="Texture2D" uid="uid://dgq46ljhrda1g" path="res://icon.svg" id="4_oettv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s8b5x"]
@@ -12,7 +12,6 @@ shader = ExtResource("2_s8b5x")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hq50k"]
 shader = ExtResource("3_nlo6c")
-shader_parameter/pixelation_factor = 874.0
 
 [node name="2DTestScene" type="Node2D" node_paths=PackedStringArray("mesh")]
 script = ExtResource("1_s8b5x")
@@ -34,6 +33,5 @@ texture = ExtResource("4_oettv")
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 texture_filter = 1
 material = SubResource("ShaderMaterial_hq50k")
-instance_shader_parameters/see_uv = true
 position = Vector2(85, 78)
 texture = ExtResource("4_oettv")
