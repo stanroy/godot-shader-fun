@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bxor003kc0cd3"]
+[gd_scene load_steps=9 format=3 uid="uid://bxor003kc0cd3"]
 
 [ext_resource type="Script" uid="uid://6ep8aclsjc4k" path="res://2d/2d_test_scene.gd" id="1_s8b5x"]
 [ext_resource type="Shader" uid="uid://b38pteacj17tj" path="res://2d/chapter05-4.gdshader" id="2_s8b5x"]
-[ext_resource type="Shader" uid="uid://dog0d2d322mjd" path="res://2d/self_study/rotation.gdshader" id="3_nlo6c"]
+[ext_resource type="Shader" uid="uid://b5rgls6pxb7ay" path="res://2d/self_study/breathing_rotation_mirror.gdshader" id="3_nlo6c"]
+[ext_resource type="Texture2D" uid="uid://ciwcfet424h03" path="res://testing_texture.png" id="4_hq50k"]
 [ext_resource type="Texture2D" uid="uid://dgq46ljhrda1g" path="res://icon.svg" id="4_oettv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s8b5x"]
@@ -28,10 +29,12 @@ mesh = SubResource("QuadMesh_33w2r")
 texture_filter = 1
 material = SubResource("ShaderMaterial_hq50k")
 position = Vector2(253, 80)
-texture = ExtResource("4_oettv")
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("4_hq50k")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 texture_filter = 1
 material = SubResource("ShaderMaterial_hq50k")
+instance_shader_parameters/see_uv = true
 position = Vector2(85, 78)
 texture = ExtResource("4_oettv")
